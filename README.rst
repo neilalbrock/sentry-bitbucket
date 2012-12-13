@@ -29,8 +29,8 @@ Ensure you've configured Bitbucket auth in Sentry by adding the following to you
     }
 
     # https://bitbucket.org/account/user/<username>/api
-    BITBUCKET_OAUTH_KEY = ''
-    BITBUCKET_OAUTH_SECRET = ''
+    BITBUCKET_CONSUMER_KEY = ''
+    BITBUCKET_CONSUMER_SECRET = ''
 
 Associate your account with Bitbucket (if you haven't already) via Account -> Identities.
 
