@@ -1,6 +1,6 @@
 """
 sentry_bitbucket
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 :copyright: (c) 2012 by Atomised Co-operative Ltd.
 :license: BSD, see LICENSE for more details.

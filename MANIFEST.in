@@ -1,3 +1,1 @@
-include setup.py README.rst MANIFEST.in LICENSE
-recursive-include src/sentry_bitbucket/templates *
-global-exclude *~
+include setup.py README.rst MANIFEST.in

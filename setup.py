@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 sentry-bitbucket
-=============
+================
 
 An extension for Sentry which integrates with Bitbucket. Specifically, it
 allows you to easily create issues from events within Sentry.
@@ -9,8 +9,11 @@ allows you to easily create issues from events within Sentry.
 :copyright: (c) 2012 by Atomised Co-operative Ltd.
 :license: BSD, see LICENSE for more details.
 """
+import os.path
 from setuptools import setup, find_packages
 
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 tests_require = [
     'nose',
@@ -23,12 +26,12 @@ install_requires = [
 
 setup(
     name='sentry-bitbucket',
-    version='0.1.0',
+    version='0.1.1',
     author='Neil Albrock',
     author_email='neil@atomised.coop',
     url='https://github.com/neilalbrock/sentry-bitbucket',
     description='A Sentry extension which integrates with Bitbucket.',
-    long_description=__doc__,
+    long_description=read('README.rst'),
     license='BSD',
     package_dir={'': 'src'},
     packages=find_packages('src'),

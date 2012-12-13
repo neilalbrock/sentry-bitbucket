@@ -1,18 +1,22 @@
+================
 sentry-bitbucket
-=============
+================
 
-An extension for Sentry which integrates with Bitbucket. Specifically, it
-allows you to easily create issues from events within Sentry.
+:Author: Neil Albrock
+:Version: 0.1.1
 
+An extension for Sentry which integrates with Bitbucket. Specifically, it allows you to easily create issues from events within Sentry.
 
-Install
--------
+This is largely a port of the `sentry-github` package, with some changes to integrate better with the Bitbucket API.
+
+Installation
+============
 
 Install the package via ``pip``::
 
-    pip install sentry-bitbucket
+    $ pip install sentry-bitbucket
 
-Ensure you've configured Bitbucket auth in Sentry::
+Ensure you've configured Bitbucket auth in Sentry by adding the following to your ``sentry.conf.py``::
 
     # Bitbucket needs to be included as a valid auth provider
     SENTRY_AUTH_PROVIDERS = {
@@ -32,9 +36,8 @@ Associate your account with Bitbucket (if you haven't already) via Account -> Id
 
 You'll now see a new action on groups which allows quick creation of Bitbucket issues.
 
-
 Caveats
--------
+=======
 
 If you have multiple Bitbucket identities associated in Sentry, the plugin will just select
 one to use.
