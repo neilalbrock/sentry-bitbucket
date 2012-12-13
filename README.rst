@@ -14,15 +14,15 @@ Install the package via ``pip``::
 
 Ensure you've configured Bitbucket auth in Sentry::
 
-	# Bitbucket needs to be included as a valid auth provider
-	SENTRY_AUTH_PROVIDERS = {
-	    'twitter': ('TWITTER_CONSUMER_KEY', 'TWITTER_CONSUMER_SECRET'),
-	    'facebook': ('FACEBOOK_APP_ID', 'FACEBOOK_API_SECRET'),
-	    'github': ('GITHUB_APP_ID', 'GITHUB_API_SECRET'),
-	    'google': ('GOOGLE_OAUTH2_CLIENT_ID', 'GOOGLE_OAUTH2_CLIENT_SECRET'),
-	    'trello': ('TRELLO_API_KEY', 'TRELLO_API_SECRET'),
-	    'bitbucket': ('BITBUCKET_CONSUMER_KEY', 'BITBUCKET_CONSUMER_SECRET'),
-	}
+    # Bitbucket needs to be included as a valid auth provider
+    SENTRY_AUTH_PROVIDERS = {
+        'twitter': ('TWITTER_CONSUMER_KEY', 'TWITTER_CONSUMER_SECRET'),
+        'facebook': ('FACEBOOK_APP_ID', 'FACEBOOK_API_SECRET'),
+        'github': ('GITHUB_APP_ID', 'GITHUB_API_SECRET'),
+        'google': ('GOOGLE_OAUTH2_CLIENT_ID', 'GOOGLE_OAUTH2_CLIENT_SECRET'),
+        'trello': ('TRELLO_API_KEY', 'TRELLO_API_SECRET'),
+        'bitbucket': ('BITBUCKET_CONSUMER_KEY', 'BITBUCKET_CONSUMER_SECRET'),
+    }
 
     # https://bitbucket.org/account/user/<username>/api
     BITBUCKET_OAUTH_KEY = ''
