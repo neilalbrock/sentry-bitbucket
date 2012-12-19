@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>sentry-bitbucket by neilalbrock</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>sentry-bitbucket</h1>
+        <h2>A Sentry extension which integrates with Bitbucket.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/neilalbrock/sentry-bitbucket/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/neilalbrock/sentry-bitbucket/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/neilalbrock/sentry-bitbucket" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>sentry-bitbucket</h2>
+
+<p>An extension for Sentry which integrates with Bitbucket. Specifically, it allows you to easily create issues from events within Sentry.</p>
+
+<p>This is largely a port of the <a href="https://github.com/getsentry/sentry-github">sentry-github</a> package, with some changes to integrate better with the Bitbucket API.</p>
+
+<h2>Installation</h2>
+
+<p>Install the package via <code>pip</code></p>
+
+<pre><code>$ pip install sentry-bitbucket
+</code></pre>
+
+<p>Ensure you've configured Bitbucket auth in Sentry by adding the following to your <code>sentry.conf.py</code></p>
+
+<pre><code># Bitbucket needs to be included as a valid auth provider
+SENTRY_AUTH_PROVIDERS = {
+    'twitter': ('TWITTER_CONSUMER_KEY', 'TWITTER_CONSUMER_SECRET'),
+    'facebook': ('FACEBOOK_APP_ID', 'FACEBOOK_API_SECRET'),
+    'github': ('GITHUB_APP_ID', 'GITHUB_API_SECRET'),
+    'google': ('GOOGLE_OAUTH2_CLIENT_ID', 'GOOGLE_OAUTH2_CLIENT_SECRET'),
+    'trello': ('TRELLO_API_KEY', 'TRELLO_API_SECRET'),
+    'bitbucket': ('BITBUCKET_CONSUMER_KEY', 'BITBUCKET_CONSUMER_SECRET'),
+}
+
+# https://bitbucket.org/account/user/&lt;username&gt;/api
+BITBUCKET_CONSUMER_KEY = ''
+BITBUCKET_CONSUMER_SECRET = ''
+</code></pre>
+
+<p>Associate your account with Bitbucket (if you haven't already) via Account -&gt; Identities.</p>
+
+<p>You'll now see a new action on groups which allows quick creation of Bitbucket issues.</p>
+
+<h2>Caveats</h2>
+
+<p>If you have multiple Bitbucket identities associated in Sentry, the plugin will just select
+one to use.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
