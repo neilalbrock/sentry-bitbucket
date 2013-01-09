@@ -21,12 +21,13 @@ tests_require = [
 
 install_requires = [
     'sentry>=5.1.0',
-    'requests>=0.14.0'
+    'requests>=1.0.0',
+    'requests-oauthlib>=0.2.0'
 ]
 
 setup(
     name='sentry-bitbucket',
-    version='0.1.2',
+    version='0.1.3',
     author='Neil Albrock',
     author_email='neil@atomised.coop',
     url='https://github.com/neilalbrock/sentry-bitbucket',

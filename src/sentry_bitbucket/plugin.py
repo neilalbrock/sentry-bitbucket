@@ -13,7 +13,7 @@ from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from sentry.plugins.bases.issue import IssuePlugin
 
-from requests.auth import OAuth1
+from requests_oauthlib import OAuth1
 
 
 class BitbucketOptionsForm(forms.Form):

@@ -3,7 +3,7 @@ sentry-bitbucket
 ================
 
 :Author: Neil Albrock
-:Version: 0.1.2
+:Version: 0.1.3
 
 An extension for Sentry which integrates with Bitbucket. Specifically, it allows you to easily create issues from events within Sentry.
 
