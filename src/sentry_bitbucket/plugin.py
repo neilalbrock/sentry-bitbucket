@@ -2,7 +2,7 @@
 sentry_bitbucket.plugin
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-:copyright: (c) 2012 by Atomised Co-operative Ltd.
+:copyright: (c) 2013 by Atomised Co-operative Ltd.
 :license: BSD, see LICENSE for more details.
 """
 import requests
@@ -98,7 +98,7 @@ class BitbucketPlugin(IssuePlugin):
             raise forms.ValidationError(_('Error communicating with Bitbucket: %s') % (e,))
 
         try:
-            data = resp.json
+            data = resp.json()
         except Exception, e:
             raise forms.ValidationError(_('Error decoding response from Bitbucket: %s') % (e,))
 

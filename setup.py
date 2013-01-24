@@ -6,7 +6,7 @@ sentry-bitbucket
 An extension for Sentry which integrates with Bitbucket. Specifically, it
 allows you to easily create issues from events within Sentry.
 
-:copyright: (c) 2012 by Atomised Co-operative Ltd.
+:copyright: (c) 2013 by Atomised Co-operative Ltd.
 :license: BSD, see LICENSE for more details.
 """
 import os.path
@@ -27,7 +27,7 @@ install_requires = [
 
 setup(
     name='sentry-bitbucket',
-    version='0.1.3',
+    version='0.1.4',
     author='Neil Albrock',
     author_email='neil@atomised.coop',
     url='https://github.com/neilalbrock/sentry-bitbucket',
