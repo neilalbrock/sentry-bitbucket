@@ -3,18 +3,11 @@ sentry-bitbucket
 ================
 
 :Author: Neil Albrock
-:Version: 0.1.4
+:Version: 0.1.5
 
 An extension for Sentry which integrates with Bitbucket. Specifically, it allows you to easily create issues from events within Sentry.
 
 This is largely a port of the ``sentry-github`` package, the main difference being that it makes use of the ``requests`` library for communication with Bitbucket and implements OAuth, which is the preferred way to integrate with their API.
-
-IMPORTANT
-=========
-
-The ``requests-oauthlib`` project currently has some issues which have been fixed on the master branch but not yet pushed to PyPi. Until they release a new version and I can update the dependencies accordingly, you will need to run the following after installing ``sentry-bitbucket``, to ensure everything works properly::
-
-    $ pip install -U git+git://github.com/requests/requests-oauthlib.git
 
 Installation
 ============
