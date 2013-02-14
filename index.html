@@ -28,20 +28,22 @@
 
     <div class="container">
       <section id="main_content">
-        <h2>sentry-bitbucket</h2>
+        <h1></h1>
+
+<h1>sentry-bitbucket</h1>
 
 <p>An extension for Sentry which integrates with Bitbucket. Specifically, it allows you to easily create issues from events within Sentry.</p>
 
-<p>This is largely a port of the <a href="https://github.com/getsentry/sentry-github">sentry-github</a> package, with some changes to integrate better with the Bitbucket API.</p>
+<p>This is largely a port of the <code>sentry-github</code> package, the main difference being that it makes use of the <code>requests</code> library for communication with Bitbucket and implements OAuth, which is the preferred way to integrate with their API.</p>
 
-<h2>Installation</h2>
+<h1>Installation</h1>
 
-<p>Install the package via <code>pip</code></p>
+<p>Install the package via <code>pip</code>::</p>
 
 <pre><code>$ pip install sentry-bitbucket
 </code></pre>
 
-<p>Ensure you've configured Bitbucket auth in Sentry by adding the following to your <code>sentry.conf.py</code></p>
+<p>Ensure you've configured Bitbucket auth in Sentry by adding the following to your <code>sentry.conf.py</code>::</p>
 
 <pre><code># Bitbucket needs to be included as a valid auth provider
 SENTRY_AUTH_PROVIDERS = {
@@ -62,7 +64,7 @@ BITBUCKET_CONSUMER_SECRET = ''
 
 <p>You'll now see a new action on groups which allows quick creation of Bitbucket issues.</p>
 
-<h2>Caveats</h2>
+<h1>Caveats</h1>
 
 <p>If you have multiple Bitbucket identities associated in Sentry, the plugin will just select
 one to use.</p>
